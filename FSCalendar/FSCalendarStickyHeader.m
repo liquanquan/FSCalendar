@@ -43,7 +43,7 @@
         self.titleLabel = label;
         
         view = [[UIView alloc] initWithFrame:CGRectZero];
-        view.backgroundColor = [UIColor colorWithRed:248.0f/255.0f green:248.0f/255.0f blue:248.0f/255.0f alpha:1.0f];
+        view.backgroundColor = [UIColor colorWithRed:255.0f/255.0f green:255.0f/255.0f blue:255.0f/255.0f alpha:1.0f];
         [_contentView addSubview:view];
         self.bottomBorder = view;
         
@@ -68,7 +68,7 @@
     
     CGFloat titleHeight = [@"1" sizeWithAttributes:@{NSFontAttributeName:self.calendar.appearance.headerTitleFont}].height*1.5 + weekdayMargin*3;
     
-    _bottomBorder.frame = CGRectMake(0, 0, _contentView.fs_width, 20.0);
+    _bottomBorder.frame = CGRectMake(0, 0, _contentView.fs_width, 10.0);
     _titleLabel.frame = CGRectMake(0, _bottomBorder.fs_bottom, titleWidth,titleHeight);
     
 }
