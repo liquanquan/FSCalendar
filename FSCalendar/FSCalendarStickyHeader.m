@@ -68,9 +68,8 @@
     
     CGFloat titleHeight = [@"1" sizeWithAttributes:@{NSFontAttributeName:self.calendar.appearance.headerTitleFont}].height*1.5 + weekdayMargin*3;
     
-    _bottomBorder.frame = CGRectMake(0, 0, _contentView.fs_width, 10.0);
-    _titleLabel.frame = CGRectMake(0, _bottomBorder.fs_bottom, titleWidth,titleHeight);
-    
+    _bottomBorder.frame = CGRectMake(0, 0, _contentView.fs_width, 0.0);
+    _titleLabel.frame = CGRectMake(0, _bottomBorder.fs_bottom + 5, titleWidth,_contentView.fs_height - 5);
 }
 
 #pragma mark - Properties
