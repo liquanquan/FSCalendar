@@ -1161,9 +1161,7 @@ typedef NS_ENUM(NSUInteger, FSCalendarOrientation) {
         CGPoint targetOffset = CGPointMake(0, MIN(headerFrame.origin.y,MAX(0,_collectionViewLayout.collectionViewContentSize.height-_collectionView.fs_bottom)));
         [_collectionView setContentOffset:targetOffset animated:animated];
     }
-    if (!animated) {
-        self.calendarHeaderView.scrollOffset = scrollOffset;
-    }
+    self.calendarHeaderView.scrollOffset = scrollOffset;
 }
 
 - (void)scrollToPageForDate:(NSDate *)date animated:(BOOL)animated
